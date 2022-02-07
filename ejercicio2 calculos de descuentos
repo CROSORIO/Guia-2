@@ -1,0 +1,36 @@
+package sv.edu.udb.guia2;
+import java.util.Scanner;
+public class Ejercicio2 {
+
+	public static void main(String[] args) {
+		double sueldo;
+		double renta = (0.071);
+		double isss = (0.03) ;
+		double afp = 0.0625;
+		
+		
+		Scanner reader = new Scanner(System.in);
+
+		 System.out.println("Vamos calcular tus descuentos de ley");
+						
+		 System.out.print("Ingrese el valor de su sueldo : ");
+		 sueldo = Double.valueOf(reader.nextLine());
+			
+		double Renta = (sueldo*renta);
+		double Isss = (sueldo*isss);
+		double AFP = (sueldo*afp);
+		double Pago = (sueldo - Isss- AFP -Renta );
+		
+		reader.close();
+		System.out.print("El valor de Renta es: ");
+		System.out.println(Renta);
+		System.out.print("El valor de ISSS es: ");
+		System.out.println(Isss);
+		System.out.print("El valor de AFP es: ");
+		System.out.println(AFP);
+		System.out.print("El pago neto es: ");
+		System.out.println(Pago);
+
+		
+	}
+}
