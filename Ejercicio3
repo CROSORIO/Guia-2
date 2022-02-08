@@ -1,0 +1,25 @@
+package sv.edu.udb.guia2;
+import java.util.Scanner;
+
+public class Ejercicio3 {
+
+	
+	
+	public static void main(String[] args) {
+	
+	Scanner reader = new Scanner(System.in);
+	int a;
+	System.out.println("********************************");
+	System.out.println("Resolvamos f(x)=(x2 +2x+1)/2");
+	System.out.println("********************************");
+	System.out.print("Ingrese el valor de x: ");
+	a=Integer.parseInt(reader.nextLine());
+	
+	double x1 =  ((Math.pow(a,2)+((2*a)+1))/2)  ;
+	
+	
+	reader.close();
+	System.out.print("El valor de x es: ");
+	System.out.println(x1);
+	}
+}
